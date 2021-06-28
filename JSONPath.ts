@@ -4,7 +4,7 @@ import {IArgs} from './types.d.js';
  * Copyright (c) 2007 Stefan Goessner (goessner.net)
  * Licensed under the MIT (MIT-LICENSE.txt) licence.
  */
-export function jsonPath(obj: any, expr: string, arg?: IArgs) {
+export function jsonPath(obj: any, expr: string, arg?: IArgs) : any {
     var P = {
        resultType: arg && arg.resultType || "VALUE",
        result: [],
