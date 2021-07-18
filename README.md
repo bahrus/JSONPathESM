@@ -11,3 +11,4 @@ JSONPath [playground](http://jsonpath.com/).
 
 There are competing libraries available, but JSONPath seems to be on the smaller size, and seems fairly robust.
 
+**NB:** This library might not be "thread safe".  I seem to get sporadic results sometimes.

@@ -12,11 +12,13 @@ export function jsonPath(obj, expr, arg) {
     }
 }
 class P {
+    $;
     constructor($, arg) {
         this.$ = $;
-        this.result = [];
         this.resultType = arg && arg.resultType || "VALUE";
     }
+    resultType;
+    result = [];
     normalize(expr) {
         var subx = [];
         return expr.replace(/[\['](\??\(.*?\))[\]']/g, function ($0, $1) { return "[#" + (subx.push($1) - 1) + "]"; })
